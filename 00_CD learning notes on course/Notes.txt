@@ -1,0 +1,44 @@
+python -m http.server
+Can also install an extension to launch code
+
+Lesson 1
+Prettier and ES lint not working; Is it because Node is installed outside the project?
+Nope, just needed to run 
+$ npm install prettier
+
+Order: Always define constants and functions etc up the top, so you know the browser has read it before launching the next thing
+
+//** tab for docs block
+
+cmd + / on a highlighted line comments out the whole line
+Repeat to take away the comments
+
+Indents for hierachy.
+Indent all the bits that go inside
+
+script tag: Used to just drop into html but edge case
+
+<script src="script.js"></script>
+leads to render blocking
+
+<script src="script.js" async></script>
+Faster, downloads script while rendering then pause render to execute
+
+<script src="script.js" defer></script>
+document needs to complete, only execute js after full html parse
+
+Always use async or defer as default. Loading js in footer is now an antipattern
+
+<script type="module" src="script.js"></script>
+If module then default is defer
+
+When object is in a seperate script file, this takes it out of the context of the browser.
+We can no longer access it directly through the browser
+Leave in main file if you need to access it-
+Use a class instead so you can reference it in the main code but reduce clutter
+
+Prototype base object oriented language.
+Each object is an instance of a Prototype
+
+
+
